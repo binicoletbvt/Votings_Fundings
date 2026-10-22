@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BINI Colet - Fundings & Voting Hub</title>
+    <title>BINI Colet - Official Voting & Funding Hub</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -44,14 +44,7 @@
             border: 1px solid rgba(225, 243, 221, 0.8);
         }
         .banner-gradient {
-            background: linear-gradient(180deg, rgba(11, 35, 13, 0.2) 0%, rgba(11, 35, 13, 0.8) 100%);
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            background: linear-gradient(180deg, rgba(11, 35, 13, 0.1) 0%, rgba(11, 35, 13, 0.85) 100%);
         }
     </style>
 </head>
@@ -81,25 +74,51 @@
         </div>
     </nav>
 
-    <!-- Main Hero Banner Container (Loads banner.jpg) -->
+    <!-- Hero Banner (Uses uploaded repository banner.jpg) -->
     <header class="relative max-w-5xl mx-auto px-4 sm:px-6 pt-6">
         <div class="relative w-full h-64 sm:h-80 md:h-96 rounded-3xl overflow-hidden shadow-xl border-2 border-white bg-grass-800">
-            <img id="heroBannerImg" src="banner.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80';" alt="Colet Banner" class="w-full h-full object-cover">
+            <img id="heroBannerImg" src="banner.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80';" alt="BINI Colet Banner" class="w-full h-full object-cover">
             <div class="absolute inset-0 banner-gradient flex flex-col justify-end p-6 sm:p-8 text-white">
                 <div class="max-w-2xl space-y-2">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white border border-white/30">
-                        <i class="fa-solid fa-leaf text-grass-300"></i> BINI Colet Support Center
+                        <i class="fa-solid fa-leaf text-grass-300"></i> BINI Colet Voting Team
                     </span>
                     <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight drop-shadow-md">
-                        Support BINI Colet
+                        Official Support Portal
                     </h2>
                     <p class="text-xs sm:text-sm text-grass-100 opacity-90 max-w-xl">
-                        Your one-stop terminal for all active donation drives, official voting campaigns, and project support links for BINI Colet.
+                        Empowering Coca-Colets & Blooms with instant access to ongoing voting campaigns and official funding drives.
                     </p>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Enhanced About Section -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-6">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-grass-200/80 relative overflow-hidden">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-grass-100/50 rounded-full blur-2xl pointer-events-none"></div>
+            <div class="relative z-10 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-grass-100 text-grass-800 text-xs font-extrabold">
+                    <i class="fa-solid fa-star text-grass-600"></i> WELCOME COCA-COLETS & BLOOMS!
+                </div>
+                <h3 class="text-xl sm:text-2xl font-extrabold text-grass-950">
+                    Welcome to the Official BINI Colet Central Dashboard
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                    We are the <strong class="text-grass-900">Official Voting Team of BINI Colet (BVT)</strong>. This portal serves as the single centralized hub for all active voting categories, polls, and project funding drives. Designed for seamless navigation, you can quickly access live contribution channels and cast your votes to support BINI Colet in real time.
+                </p>
+                <div class="pt-2 flex flex-wrap items-center gap-3 text-xs font-bold text-grass-800">
+                    <span class="flex items-center gap-1.5 bg-grass-50 px-3 py-1.5 rounded-xl border border-grass-200">
+                        <i class="fa-solid fa-bookmark text-grass-600"></i> Bookmark this page for daily updates!
+                    </span>
+                    <span class="flex items-center gap-1.5 bg-grass-50 px-3 py-1.5 rounded-xl border border-grass-200">
+                        <i class="fa-solid fa-shield-halved text-grass-600"></i> Verified Official Links Only
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Social Media Team Section -->
     <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-6">
@@ -110,7 +129,7 @@
                 </div>
                 <div>
                     <h3 class="font-extrabold text-white text-base">BINI Colet Voting Team (BVT)</h3>
-                    <p class="text-xs text-grass-200">Follow official social media channels for real-time updates & mechanics!</p>
+                    <p class="text-xs text-grass-200">Follow official social channels for real-time announcements & voting guides!</p>
                 </div>
             </div>
             
@@ -135,7 +154,7 @@
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-grass-200">
             <div class="flex items-center gap-2">
                 <span class="w-3 h-3 rounded-full bg-grass-500 animate-pulse"></span>
-                <h3 class="text-lg font-bold text-grass-950">Directory Links</h3>
+                <h3 class="text-lg font-bold text-grass-950">Active Directories</h3>
             </div>
             <div class="flex bg-grass-100 p-1 rounded-2xl border border-grass-200 text-xs font-bold text-grass-800 self-start sm:self-auto">
                 <button onclick="filterContent('all')" id="tab-all" class="px-4 py-2 rounded-xl transition bg-white text-grass-900 shadow-sm">
@@ -225,8 +244,8 @@
                     <i class="fa-solid fa-bell"></i>
                 </div>
                 <div class="max-w-md">
-                    <h5 class="font-bold text-grass-950 text-base">No Ongoing Votings Right Now</h5>
-                    <p class="text-xs text-gray-500 mt-1">There are currently no active voting links available. Bookmark this page or check back later for updates!</p>
+                    <h5 class="font-bold text-grass-950 text-base">No Active Votings Right Now</h5>
+                    <p class="text-xs text-gray-500 mt-1">There are currently no active voting polls. Please bookmark this page or follow BVT social media channels for real-time voting callouts!</p>
                 </div>
                 <button onclick="copyLink(window.location.href)" class="mt-2 bg-grass-600 text-white hover:bg-grass-700 text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-md shadow-grass-600/20">
                     <i class="fa-solid fa-bookmark"></i> Copy Page Link to Bookmark
@@ -244,7 +263,7 @@
                         <span class="font-black text-lg text-white">BINI COLET</span>
                         <span class="text-xs bg-grass-800 text-grass-300 font-bold px-2 py-0.5 rounded">HUB</span>
                     </div>
-                    <p class="text-xs text-grass-400 mt-1">Managed for Bloom Support & Voting Initiatives.</p>
+                    <p class="text-xs text-grass-400 mt-1">Official Support & Voting Directory managed by BVT.</p>
                 </div>
 
                 <div class="flex items-center gap-4">
@@ -318,5 +337,5 @@
         }
     </script>
 </body>
-    </html>
-    
+</html>
+                            
